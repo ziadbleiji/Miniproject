@@ -8,18 +8,22 @@ include "config.php";
 <head>
 <title>Bibliotheek</title>
 </head>
+
 <body>
 
-<h1>Bibliotheek</h1>
+<header>
+<h1>Bibliotheek applicatie</h1>
+<hr>
+</header>
 
 <a href="add_book.php">Boek toevoegen</a>
 
 <br><br>
 
 <form action="search.php" method="GET">
-Zoek boek:
-<input type="text" name="zoek">
-<input type="submit" value="Zoeken">
+
+Zoek boek: <input type="text" name="zoek" required> <input type="submit" value="Zoeken">
+
 </form>
 
 <br><br>
@@ -53,5 +57,11 @@ echo "</tr>";
 
 </table>
 
+<footer>
+<hr>
+<p>Dit is mijn miniproject Bibliotheek</p>
+</footer>
+
 </body>
 </html>
+

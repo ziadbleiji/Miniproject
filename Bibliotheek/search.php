@@ -16,9 +16,13 @@ $result = mysqli_query($conn,$sql);
 <head>
 <title>Zoekresultaten</title>
 </head>
+
 <body>
 
-<h2>Zoekresultaten</h2>
+<header>
+<h1>Zoekresultaten</h1>
+<hr>
+</header>
 
 <a href="index.php">Terug</a>
 
@@ -50,5 +54,11 @@ echo "</tr>";
 
 </table>
 
+<footer>
+<hr>
+<p>Bibliotheek applicatie</p>
+</footer>
+
 </body>
 </html>
+
