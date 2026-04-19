@@ -1,0 +1,344 @@
+@charset "UTF-8";
+
+
+* {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F6F7F9;
+  margin: 0;
+}
+
+
+.content {
+  margin: 0 auto;
+}
+
+main {
+  padding: 2em 4em;
+}
+
+.grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.grid .row {
+  flex: 1;
+}
+
+
+.white-background {
+  background-color: white;
+  padding: 1.5em;
+  border-radius: 10px;
+}
+
+
+.accent-color {
+  color: #90A3BF;
+}
+
+.section-title {
+  font-size: 1em;
+  color: #90A3BF;
+}
+
+
+.button-primary {
+  background-color: #3563e9;
+  color: white;
+  border-radius: 6px;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.2s;
+}
+
+.button-primary:hover {
+  background-color: #244edb;
+}
+
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background-color: white;
+  padding: 1rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.topbar .logo {
+  flex: 1;
+}
+
+.topbar .logo a {
+  color: #3563e9;
+  font-size: 2em;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+*
+.topbar form {
+  flex: 2;
+  position: relative;
+}
+
+.topbar form input[type=search] {
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px solid #C3D4E9;
+  border-radius: 50px;
+}
+
+
+.topbar nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.topbar nav ul a {
+  text-decoration: none;
+  color: #7ca6c3;
+  font-weight: 500;
+}
+
+
+.topbar .menu {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.topbar .account img {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+
+.account-dropdown {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.account.active .account-dropdown {
+  display: block;
+}
+
+
+.advertorials {
+  display: flex;
+  gap: 1em;
+  padding-bottom: 2em;
+}
+
+.advertorial {
+  flex: 1;
+  background-color: #54A6FF;
+  padding: 24px;
+  border-radius: 10px;
+  color: white;
+}
+
+.advertorial h2 {
+  margin: 0;
+}
+
+.advertorial img {
+  max-width: 100%;
+  margin-top: 1em;
+}
+
+
+.cars {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+  gap: 20px;
+}
+
+.car-details {
+  background-color: white;
+  padding: 24px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.car-details img {
+  max-height: 90px;
+  object-fit: contain;
+}
+
+
+.car-specification {
+  display: flex;
+  justify-content: space-between;
+  color: #90A3BF;
+}
+
+
+.rent-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+footer {
+  display: flex;
+  padding: 2em 4em;
+  background-color: white;
+}
+
+footer .brand {
+  flex: 1;
+}
+
+footer .footer-links {
+  flex: 1;
+  display: flex;
+  gap: 3em;
+  justify-content: flex-end;
+}
+
+footer .footer-links .links ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+
+.legal-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 4em;
+  background-color: white;
+  border-top: 1px solid rgba(19, 19, 19, 0.16);
+}
+footer .footer-links .links ul a {
+  text-decoration: none;
+  color: #90A3BF;
+  transition: 0.2s;
+}
+
+footer .footer-links .links ul a:hover {
+  color: #3563e9;
+}
+
+.show-more {
+  display: flex;
+  justify-content: center;
+  padding: 2em 0;
+}
+
+
+footer .footer-links .links ul a,
+.legal-footer .legal-links ul a {
+  text-decoration: none;
+  color: #90A3BF;
+  transition: 0.2s;
+}
+
+footer .footer-links .links ul a:hover,
+.legal-footer .legal-links ul a:hover {
+  color: #3563e9;
+}
+
+.account-links ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.account-links ul li a {
+  text-decoration: none;
+  color: #90A3BF;
+  transition: 0.2s;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.account-links ul li a:hover {
+  color: #3563e9;
+}
+
+.account-dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.account-dropdown ul li a {
+  text-decoration: none;
+  color: #90A3BF;
+  display: block;
+  padding: 8px 12px;
+  transition: 0.2s;
+}
+
+.account-dropdown ul li a:hover {
+  color: #3563e9;
+  background-color: #f5f7fb;
+}
+
+.account {
+  position: relative;
+}
+
+.account-dropdown {
+  display: none;
+  position: absolute;
+  top: 55px;
+  right: 0;
+  background: white;
+  border-radius: 10px;
+  min-width: 180px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  z-index: 100;
+}
+
+.account-dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.account-dropdown ul li a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #90A3BF;
+  transition: 0.2s;
+}
+
+.account-dropdown ul li a:hover {
+  background-color: #f5f7fb;
+  color: #3563e9;
+}
+
+
+.account.active .account-dropdown {
+  display: block;
+}
